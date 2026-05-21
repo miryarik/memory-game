@@ -1,0 +1,59 @@
+@import url('/src/stylesheets/modern-reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    background-color: rgb(30, 30, 30);
+    font-family: "Roboto Mono";
+    --card-size: 120px;
+}
+
+@media screen and (min-width: 300px) {
+
+    :root {
+        --card-size: 80px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+
+    :root {
+        --card-size: 120px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+    :root {
+        --card-size: 90px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+
+    :root {
+        --card-size: 150px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    :root {
+        --card-size: 180px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .card-grid {
+        grid-template-columns:
+            repeat(5, 140px) !important
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .card-grid {
+        grid-template-columns:
+            repeat(5, 180px) !important
+    }
+}

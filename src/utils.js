@@ -1,7 +1,22 @@
+export const MAX = 20;
+
 export async function getCharacters() {
-    const API_URL =
-        "https://rickandmortyapi.com/api/character/1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,";
-    const response = await fetch(API_URL);
+    // generate MAX unique random numbers
+    // put them in api request url
+    // map the responses to character objects
+
+    const API_BASE = "https://rickandmortyapi.com/api/character/";
+
+    const ids = new Set();
+
+    while (ids.size < MAX) {
+        const random = Math.floor(Math.random() * 100) + 1;
+        ids.add(random);
+    }
+
+    const url = API_BASE + Array.from(ids).join();
+
+    const response = await fetch(url);
     const data = await response.json();
 
     return data.map((item) => ({

@@ -1,16 +1,27 @@
 .card {
-    width: 100%;
-    text-align: center;
-    border: 2px gray solid;
+    display: flex;
+    flex-direction: column;
     border-radius: 18px;
     overflow: hidden;
+    position: relative;
+
 
     img {
         width: 100%;
+        height: auto;
+        border-bottom-left-radius: 20px;
     }
 
+
     p {
-        padding: 0;
-        margin: 4px;
+        font-family: monospace;
+        background: rgb(65, 65, 65);
+        color: white;
+        position: absolute;
+        font-size: 10px;
+        bottom: 0;
+        padding: 4px 8px;
+        border-radius: 0 12px 0 0;
     }
+
 }

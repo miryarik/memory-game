@@ -1,0 +1,15 @@
+main {
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    header {
+        display: flex;
+        background-color: rgb(20, 20, 20);
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 8px;
+    }
+}
